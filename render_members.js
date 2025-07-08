@@ -10,12 +10,12 @@ const members = [
   },
 
   {
-    name: "Ethan Carter",
-    title: "CEO",
+    name: "Eric Salamba",
+    title: "CEO, Senior Software Engineer",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuB_Zh2-j6GIyy4f8QIM2GONHBrVA5PnEFUeTknWGLbbkE8syMc-t2C3kW90mBaHS9X0U_c3QkSFIjucy_rYrBmiyYH1qEXPhmYZxvpf0dH_Io_iOMriZy4OMSbraQwKsxj8Dod8_NxIlFFrfR_5is4vwiQn4CqA49DNtmtNJsxb0kLdqA80ra9l9zn467o4dKhlMYNER9OO8Hn7e1npIVUdtYGBVIT6lF1YbiMA1iHPayAXPLEP8n6Bp6nZwLnhg3x33y6sUFEkm_g",
-    description: "Ethan leads Haki Tech with a vision for innovative software solutions and a commitment to client success.",
-    link: "",
-    specialties: ["Leadership", "Business Strategy"]
+    description: "A technically grounded and creatively inclined computer scientist with a sharp focus on building functional, elegant, and user-centric applications. I have hands-on experience across full-stack web development (MERN, PHP+MySQL), mobile development (React Native), and backend systems (Node.js, Express, Django). I’ve tackled real-world problems from medical transcription and OCR to e-commerce platforms and CMS systems—often owning the project end-to-end.",
+    link: "https://salamba-eric.github.io/profile/portfolio_2.html",
+    specialties: ["Problem Solving", "Web Development", "Mobile Development", "Backend Development", "Project Management"]
   },
 
   // Add other members here...
