@@ -75,6 +75,37 @@ function renderToggleTheme(){
   }
 }
 
+// Quotation modal
+function showModal() {
+  modal = document.createElement('div');
+  modal.id = 'out-of-view-modal';
+  modal.style.display = 'flex';
+  modal.style.position = 'fixed';
+  modal.style.top = 0;
+  modal.style.left = 0;
+  modal.style.width = '100vw';
+  modal.style.height = '100vh';
+  modal.style.background = 'rgba(0,0,0,0.5)';
+  modal.style.zIndex = 1000;
+  modal.style.justifyContent = 'center';
+  modal.style.alignItems = 'center';
+  modal.innerHTML = `
+    <div style="background:#fff; padding:24px 32px; border-radius:8px; min-width:300px; position:relative;">
+      <span id="closeModal" style="position:absolute; top:6px; right:12px; cursor:pointer; font-size:20px;">&times;</span>
+      <h2
+        class="text-center text-lg pt-5"
+      >Coming soon! Please contact us using the listed links at the bottom of the page for more information. Thank you for choosing us!</h2>
+    </div>
+  `;
+  document.body.appendChild(modal);
+  const closeModal = () => {
+    modal.style.display = 'none';
+    document.body.removeChild(modal);
+  };
+  document.getElementById('closeModal').onclick = closeModal;
+  document.getElementById('out-of-view-modal').onclick = closeModal;
+}
+
 // On DOM Load
 document.addEventListener("DOMContentLoaded", () => {
   renderFooter();
@@ -83,6 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Light/Dark mode toggle based on checkbox
   const checkbox = document.getElementById('checkbox');
   const root = document.documentElement;
+
 
   // This logic now assumes: UNCHECKED = DARK, CHECKED = LIGHT
   function setMode(isLight) {
@@ -104,4 +136,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const isLight = e.target.checked;
     setMode(isLight);
   });
+
+  const showQuotesButton = document.getElementById('show-quotes');
+  if (showQuotesButton) {
+    showQuotesButton.addEventListener('click', showModal);
+  }
 });

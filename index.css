@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 .layout-content-container p {
     color: var(--secondary-text-color);
 }
-button {
+button, .btn {
   background-color: var(--button-bg-color) !important;
   color: var(--button-text-color) !important;
 }
@@ -178,4 +178,15 @@ footer .flex-wrap a svg {
 
 footer .flex-wrap a:hover svg {
   transform: scale(1.2); /* Increase size on hover */
+}
+
+#closeModal {
+  border-radius: 5px;
+  padding: 1px 10px;
+  color: var(--main-text-color);
+}
+
+#closeModal:hover {
+  transition: all 0.2s ease-in-out;
+  background-color: rgb(194, 127, 127);
 }
