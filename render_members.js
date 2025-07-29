@@ -2,9 +2,9 @@
 const members = [
   {
     name: "Creflo Tigra Nyagrowa",
-    title: "Operations Lead",
+    title: "Operations Lead, Project Manager",
     image: "images/creflo_tigra_1.jpg",
-    description: "A dedicated Electrical Engineer and Project Lead with a strong passion for integrating software and hardware development to create innovative solutions. Experienced in robotics and skilled in managing projects end-to-end across various applications, from consumer-facing apps like a gym tracker to complex firm-level initiatives.",
+    description: "Visionary Project Leader. An Electrical Engineer who thrives at the intersection of hardware and software. He is passionate about driving innovation, orchestrating teams, and delivering solutions that blend technical excellence with practical impact. With hands-on experience in robotics and a track record of managing projects from concept to deployment, Creflo excels at navigating complex challenges and inspiring collaboration.",
     link: "https://www.linkedin.com/in/creflo-tigra-a1659b275",
     email: "tigracreflo14@gmail.com",
     specialties: ["Architecture", "Innovation"]
@@ -14,7 +14,7 @@ const members = [
     name: "Eric Salamba",
     title: "Senior Software Engineer",
     image: "images/eric_1.jpg",
-    description: "A creative computer scientist skilled in full-stack web, mobile, and backend development. They build user-centric applications and have experience with diverse projects, from medical transcription to e-commerce, often managing them end-to-end.",
+    description: "Creative Full-Stack Developer. A computer scientist who brings ideas to life through code. He specializes in building user-centric web, mobile, and backend applications, and is known for his problem-solving skills and ability to manage projects end-to-end. Eric’s portfolio spans medical, e-commerce, and other domains, always with a focus on delivering robust, scalable solutions.",
     link: "https://salamba-eric.github.io/profile/portfolio_2.html",
     email: "ericsalamba@gmail.com",
     specialties: ["Problem Solving", "Web Development", "Mobile Development", "Backend Development", "Project Management"]
@@ -41,7 +41,7 @@ card.innerHTML = `
         <p class="text-white text-base font-medium leading-normal">${member.name}</p>
       </a>
         <p class="text-[#9cabba] text-sm font-normal leading-normal">${member.title}</p>
-        <p class="text-[#9cabba] text-sm font-normal leading-normal">${member.description}</p>
+        <p class="text-[#9cabba] text-sm font-normal leading-normal mt-2">${member.description}</p>
         <p class="mt-5">Specialties:</p>
         <div class="flex justfy-center items-center gap-1 flex-wrap mt-1">
           ${member.specialties.map(specialty => `
